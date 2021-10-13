@@ -65,16 +65,15 @@ function app(){
         case 'authors': include ('pages/authors.php');break;
         case 'enemies': include ('pages/enemies.php');break;
         case 'guns': include ('pages/guns.php');break;
-        case 'news':articleList();break;
-        case 'post':getSinglePost($uri);break;
+        case  'news':articleList();break;
+        case  'post':getSinglePost($uri);break;
 
         default: include ('pages/main.php');
     }
 }
 function getSinglePost($uri){
-    $page = getContent("news/$uri[2]");
+    $page = getContent("news/$uri[2].md");
     echo $page['body'];
-
 
 }
 
