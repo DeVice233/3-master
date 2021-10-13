@@ -145,12 +145,12 @@ function articleList(){
 
 function showIntroPage($page){
     echo '<div class="card m-1 col-sm-3 text-start" >
-            <div class="card-body">
+            <div class="card-body d-grid">
                 <img src="'.$page['header']['ImageSource'].'" class="card-img-top" alt="...">
                 <h5 class="card-title">'.$page['header']['Title'].'</h5>
                 <h6 class="card-subtitle mb-2 text-muted">'.$page['header']['Data'].'</h6>
                 <p class="card-text">'.$page['header']['Intro'].'</p>
-                <a href="/post/'.$page['header']['URI'].'" class="btn btn-primary " style="align-self: center">Читать больше</a>
+                <a href="/post/'.$page['header']['URI'].'" class="btn btn-primary d-flex mt-auto justify-content-center" style="align-self: center">Читать больше</a>
             </div>
         </div>';
 }
